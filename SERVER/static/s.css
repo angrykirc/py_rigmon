@@ -1,0 +1,127 @@
+html, body {
+    height: 100%;
+    background-color: #222;
+    color: #fff;
+}
+
+h2 {
+    font-family: Ubuntu, monospace, sans-serif;
+}
+
+.rig {
+    font-family: "Ubuntu";
+    font-size: 14px;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+}
+
+.rig td {
+    border: 1px solid #ddd;
+    padding: 4px;
+    color: black;
+    text-align:center;
+}
+
+.rig td.blue {
+    background-color: #ccffcc;
+}
+
+.rig td.rn { 
+    background-color: #319931;
+    font-weight: bold;
+}
+
+.rig td.bad {
+    color: red !important;
+    font-weight: bold;
+}
+
+.rig tr:nth-child(even){background-color: #eee;}
+
+.rig tr:hover {background-color: #ddd;}
+
+.rig th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+}
+
+div.c {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.keypad {
+	background: #d4ffd4;
+	padding: 6.4px;
+	margin: 25.6px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid #000000;
+	box-shadow: 0 3px 5px #000, 0 3px 9px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+	border-spacing: 6px;
+	line-height: normal
+}
+
+.keypad-readout {
+	background: linear-gradient(to top, #1a211e 1%, #000 100%), #000;
+	color: #33ee33;
+  	text-shadow: 0 0 3px #33ee33;
+	font-family: Ubuntu, monospace, sans-serif;
+    font-size: 24px;
+	font-weight: 700;
+	border-radius: 3.84px;
+	border-top-left-radius: 6.4px;
+	border-top-right-radius: 6.4px;
+	border: 2px solid #32443a;
+	text-align: center;
+	padding: 7px;
+
+}
+
+.regular-button {
+	background: #555555;
+	color: #fff;
+	font-family: Ubuntu, monospace, sans-serif;
+    font-size: 20px;
+	font-weight: 700;
+	text-align: center;
+	width: 44px;
+	height: 36px;
+	border-radius: 2px;
+	transition: background .1s ease-out;
+	box-shadow: 0 3px 7px rgba(0, 0, 0, .6)
+}
+
+.clr-button {
+	border-bottom-left-radius: 12.8px;
+	background: #9e0e17
+}
+
+.ok-button {
+	border-bottom-right-radius: 12.8px;
+	background: #43862e
+}
+
+.keypad-readout,
+.regular-button {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: default
+}
