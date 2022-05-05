@@ -8,14 +8,13 @@ login_cookie = dict()
 # authentication attempt timeout list (IP:time)
 login_limit = dict()
 
-
-def delta_mins(tstamp1, tstamp2):
+def delta_mins(tstamp1: int, tstamp2: int) -> int:
     td = tstamp2 - tstamp1
         
     return int(round(td / 60))
     
 # Check if authentication attempt timeout is reached for given IP
-def check_rate(ip):
+def check_rate(ip: str) -> bool:
     if ip in login_limit:
         if delta_mins(login_limit[ip], time.time()) < 2:
             return True
@@ -25,7 +24,7 @@ def check_rate(ip):
     return False
 
 # Checks if login cookie is set and is not timed out. If timed out, forcefully removes it
-def check_login(cook):
+def check_login(cook: int) -> bool:
     if cook in login_cookie:
         to = delta_mins(login_cookie[cook], time.time())
 
@@ -37,7 +36,7 @@ def check_login(cook):
     return False
 
 # Adds a new login cookie to entry
-def add_login():
+def add_login() -> int:
     cook = random.getrandbits(32)
     while cook in login_cookie:
         cook = random.getrandbits(32)
