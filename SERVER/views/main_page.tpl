@@ -1,28 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-div.c {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    position: relative;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-}
-
-html, body {
-    height: 100%;
-    background-color: #222;
-    color: #fff;
-}
-
-h2 {
-    font-family: Ubuntu, monospace, sans-serif;
-}
-</style>
+<link rel="stylesheet" type="text/css" href="/static/s.css">
 <title>my home page</title>
 </head>
 <body>
