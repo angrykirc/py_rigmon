@@ -8,7 +8,7 @@ login_cookie = dict()
 # authentication attempt timeout list (IP:time)
 login_limit = dict()
 
-def delta_mins(tstamp1: int, tstamp2: int) -> int:
+def delta_mins(tstamp1: float, tstamp2: float) -> int:
     td = tstamp2 - tstamp1
         
     return int(round(td / 60))
